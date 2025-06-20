@@ -1,16 +1,32 @@
-# tanya_daku_pbm
+# 🎱 Tanya Daku PBM
 
-A new Flutter project.
+Proyek **Tanya Daku PBM** adalah sebuah aplikasi Flutter interaktif bergaya **Magic 8-Ball**. Pengguna bisa bertanya apa saja, lalu mengetuk bola untuk melihat jawaban acak seperti:
+- ✅ Yes
+- ❌ No
+- 🤷‍♂️ I have no idea
+- 🤷‍♂️ Ask Again Later
+---
 
-## Getting Started
+## 📱 Fitur Utama
+- Tampilan UI sederhana dan intuitif.
+- Menekan bola untuk men-generate jawaban secara acak.
+- Jawaban diambil dari gambar `ball1.png` hingga `ball5.png` di dalam folder `images`.
+- Mudah diubah dan dikembangkan sesuai kebutuhan.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🖼️ Screenshot 
+![Demo App](images/screenshot.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧭 Cara Kerja
+1. Ketika pengguna mengetuk bola (`TextButton`), `setState()` dipanggil untuk memperbarui angka acak.
+2. Angka acak menentukan gambar bola (misalnya `images/ball1.png`, `images/ball2.png`, dst.).
+3. Masing-masing gambar merepresentasikan jawaban:
+   - `ball1.png` → Yes
+   - `ball2.png` → No
+   - `ball3.png` → I have no idea
+   - dan seterusnya sesuai kebutuhanmu.
+
+---
